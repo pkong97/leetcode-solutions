@@ -27,7 +27,7 @@ private void permutations(int[] a, int start, ArrayList<int[]> results) {
 	if (start >= a.length) {
 		results.add(a.clone());
 	} else {
-		for (int i = 0; i < a.length; i++) {
+		for (int i = start; i < a.length; i++) {
 			swap(a, start, i);
 			permutations(a, start + 1, result);
 			swap(a, start, i);
